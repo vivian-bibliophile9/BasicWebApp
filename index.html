@@ -35,10 +35,56 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <!--Javascript code.-->
 <script>
-  
-  
-  
-  
+	var exampleVariable1 = 0;
+	var exampleVariable2 = 0;
+	var exampleVariable3 = 0;
+	
+	function exampleFunction1()
+	{
+		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
+    		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
+    		exampleVariable2 = parseFloat(document.getElementById("firstInputBox").value);
+		
+		exampleVariable3 = exampleVariable1 + exampleVariable2;
+		
+		alert("You just ran an addition function!");
+		console.log("Addition function was run.");
+	}
+	
+	function exampleFunction2()
+	{
+		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
+    		exampleVariable2 = parseFloat(document.getElementById("firstInputBox").value);
+		
+		exampleVariable3 = exampleVariable1 * exampleVariable2;
+		
+		alert("You just ran a multiplication function!");
+		console.log("Multiplication function was run.");
+	}
+	
+	function exampleFunction3()
+	{
+		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
+    		exampleVariable2 = parseFloat(document.getElementById("firstInputBox").value);
+		
+		exampleVariable3 = exampleVariable1 ** exampleVariable2;
+		
+		alert("You just ran an exponent function!");
+		console.log("Exponent function was run.");
+	}
+	
+	function exampleResultsFunction()
+	{
+		document.getElementById("endResults").innerHTML = "Your final result is: " + exampleVariable3;
+		resetVariables();
+	}
+	
+	function resetVariables()
+	{
+		exampleVariable1 = 0;
+		exampleVariable2 = 0;
+		exampleVariable3 = 0;
+	}
 </script>
   
   
@@ -70,10 +116,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <!--Main HTML body section.-->
 <body>
+<!--Header!-->
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>APP NAME GOES HERE</h1>
 </div>
   
+  <!--Landing page content.-->
   <div id="content" class="w3-container">
 	  <p>INTRODUCTION/DESCRIPTION OF APP GOES HERE</p>
 	
@@ -83,6 +131,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   
   
   
+<!--FIRST SUBPAGE-->
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1>
@@ -91,49 +140,66 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   <center>
     
     	<div id="content" class="w3-container">
-        <p>QUESTION 1 GOES HERE</p>    
+        	<p>QUESTION 1 GOES HERE</p>    
     	</div>
+	
+	<!--Form element. This allows for user input in HTML.-->
+	<form>
+		<!--Label for first input field.-->
+		<label for="firstInputBox">Enter a number:</label><br>
+		<!--User input box.-->
+		<input type="number" id="firstInputBox" value="0"><br>
+		<!--Label for second input field.-->
+		<label for="secondInputBox">Enter another number:</label><br>
+		<!--User input box.-->
+		<input type="number" id="secondInputBox" value="0">
+		
+		<br><br><br>
+	</form>
       
-  <a href="#finalpage" class="w3-btn w3-grey">Button 1</a>
-  <a href="#finalpage" class="w3-btn w3-grey">Button 2</a>
-  <a href="#finalpage" class="w3-btn w3-grey">Button 3</a>
+  <a href="#finalpage" onclick="exampleFunction1();" class="w3-btn w3-grey">Button 1</a>
+  <a href="#finalpage" onclick="exampleFunction2();" class="w3-btn w3-grey">Button 2</a>
+  <a href="#finalpage" onclick="exampleFunction3();" class="w3-btn w3-grey">Button 3</a>
     
   </center>
 </div>  
   
   
   
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+<!--LAST SUBPAGE-->
 <div class="page" id="finalpage">
 	<div class="w3-container w3-flat-carrot">
-		<h1>2ND PAGE TITLE GOES HERE</h1>
+		<h1>FINAL PAGE TITLE GOES HERE</h1>
 	</div>
 	
   <center>
     
 	  <div id="content" class="w3-container">
-		  <p>PAGE 2 CONTENT GOES HERE</p>
+		  <p id="endResults">FINAL PAGE CONTENT GOES HERE</p>
 	  </div>
   
-  <a class="w3-btn w3-black">Click me!
+  <a class="w3-btn w3-black" onclick="exampleResultsFunction();">Click me!
     <br>
     <img id="resultsButtonImg" src="https://i.imgur.com/rZOaHhx.png" alt="spongebob">
   </a>
+  <a href="#content" onclick="resetVariables();" class="w3-btn w3-black">Return to Home Page</a>
     
   </center>
-</div>	
-
-    
-    
-
+</div>
   
   
   
-  
-  
-  
-  
-  
-  
+<!--Footer!-->
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>YOUR NAME (or anything you want) HERE</p>
 </footer>
