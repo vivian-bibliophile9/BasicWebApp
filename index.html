@@ -43,7 +43,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	{
 		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
     		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("firstInputBox").value);
+    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
 		
 		exampleVariable3 = exampleVariable1 + exampleVariable2;
 		
@@ -54,7 +54,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function exampleFunction2()
 	{
 		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("firstInputBox").value);
+    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
 		
 		exampleVariable3 = exampleVariable1 * exampleVariable2;
 		
@@ -65,7 +65,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function exampleFunction3()
 	{
 		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("firstInputBox").value);
+    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
 		
 		exampleVariable3 = exampleVariable1 ** exampleVariable2;
 		
@@ -92,7 +92,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!--CSS webpage style/format settings.-->
 <style>	
 .body {
-     margin: 0em;
+     margin: 0 auto;
 }
 
 .page {
@@ -106,7 +106,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     background-color: hsl(0,0%,100%);
 }
 
-  .page:target {
+.page:target {
     left: 0vw;
     z-index: 1;
 }
