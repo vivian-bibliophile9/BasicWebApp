@@ -85,12 +85,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		exampleVariable2 = 0;
 		exampleVariable3 = 0;
 	}
-	function insertimage()
+	function insertImages()
 	{
 		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
     		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
 		
-		for(let  index  = 0; index < examplevariable1; index++)
+		for(let  index  = 0; index < exampleVariable1; index++)
 			{	
 				var smileyImage = document.createElement(“img”);
 				smileyImage.src = “https://i.imgur.com/jctdkSS.png”;
@@ -98,7 +98,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 			}
 		
-		for(let index = 0; index2 < examplevariable2; index++)
+		for(let index = 0; index2 < exampleVariable2; index2++)
 			
 			{
 		
@@ -108,7 +108,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 			}
 		
 		
-		document.getElementById(“specialcontent”).innerHTML = “You inserted ” + exampleVariable1 + “ smiley faces and ” + exampleVariable2 + “ frowny faces!”;
+		document.getElementById(“specialcontent”).innerHTML = "You inserted " + exampleVariable1 + "smiley faces and " + exampleVariable2 + "frowny faces!"; 
+		
 
 	}
 	
@@ -187,7 +188,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   <a href="#finalpage" onclick="exampleFunction1();" class="w3-btn w3-grey">Button 1</a>
   <a href="#finalpage" onclick="exampleFunction2();" class="w3-btn w3-grey">Button 2</a>
   <a href="#finalpage" onclick="exampleFunction3();" class="w3-btn w3-grey">Button 3</a>
-  <a href="specialpage" onclick="insertimage();" class="w3-btn w3-grey">Special Button</a> 
+  <a href="specialpage" onclick="insertImages();" class="w3-btn w3-grey">Special Button</a> 
     
   </center>
 </div>  
@@ -230,15 +231,19 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	  <div id="specialpage" class="page">
 		  <!--header-->
 		  <div id="specialheader" class="w3-container w3-flat-carrot">
-			  <h1>Special Page</h1>
+			  <h1>Special Page!</h1>
 		  </div>
+		  
+		  <center>
 		  <!--Main content-->
 		  <div id="specialcontent" class="w3-container"> 
-			  <p id="contentresult">SPECIAL PAGE</p>
+			  <p id="contentresult">Placeholder text!</p>
 		  </div>
 		  <!--A link that takes the user to a new page-->
 		  
-		  <a href="content" onclick="resetvariables();" class="w3-btn w3-grey">Return to Home Page</a>
+		  <a href="content" onclick="resetVariables();" class="w3-btn w3-grey">Return to Home Page</a>
+			 
+			  <center>
 	  </div>
 			  
 			
