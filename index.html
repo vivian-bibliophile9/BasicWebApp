@@ -112,7 +112,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 	}
 	
-	var getsong= 0; 
 	
 	function getSong()
 
@@ -121,8 +120,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 			
 			if (songName == 1) 
 			{
-				document.getElementbyId("firstInputBox").innerHTML= "Your song is" +  songName1; 
+				
 				songName1= "Call it what you want- Taylor Swift";  
+				document.getElementbyId("firstInputBox").innerHTML= "Your song is" +  songName1; 
 			}
 				
 		}
