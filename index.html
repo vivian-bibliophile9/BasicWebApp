@@ -169,7 +169,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	  <a href="#one" class="w3-btn w3-grey w3-round">Get Started!</a>
 	  <!--Button for page 2--> 
-	  <a href="#two" class="w3-btn w3-forest-green w3-round">May I choose a song for you?</a>
+	  <a href="#two" class="w3-btn w3-flat-sage w3-round">May I choose a song for you?</a>
 	
 	  <p>The following code has been developed by students and/or researchers of the Freshman Research Initiative Maker Space Stream at The University of Texas at Austin. This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code. THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION!</p>
   
@@ -232,10 +232,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<label for="firstInputBox">Enter a number:</label><br>
 		<!--User input box.-->
 		<input type="number" id="firstInputBox" value="0"><br>
+			
+		
 	  
 		<br><br><br>
 	  
 		</form>
+		
+		<a class="w3-btn w3-black" onclick="getSong();">Click me!
+		<a href="#content" onclick="resetVariables();" class="w3-btn w3-black">Return to Home Page</a>
 		
 	</center>
 	  </div> 
@@ -286,7 +291,20 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	  </div>
 			  
 			
-	  
+<!--Song Page-->
+	<div id="songpage" class="page">
+		<!--header-->
+		<div id="songheader" class="w3-container w3-flat-sage">
+			<h1>Your song:</h1>
+		</div>
+		
+		<center>
+		<!--Main content-->
+		<div id="songContent" class="w3-container">
+			<p id="songResult">Your song is:</p>
+			
+			</div> 
+			
   
   
 <!--Footer!-->
