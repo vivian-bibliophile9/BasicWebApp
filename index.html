@@ -111,14 +111,17 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		document.getElementById("contentResult").innerHTML = "You inserted " + exampleVariable1 + "smiley faces and " + exampleVariable2 + "frowny faces!"; 
 		
 		
-		var songName= prompt("Please enter a number from 1-5")
+		
 		
 		function getSong()
+
 		{
-			if (r== 1) 
+			var songName = prompt ("Please enter a number from 1-5"); 
+			if (songName! == 1) 
 			{
-				songName= "Call it what you want- Taylor Swift"; 
-				document.getElementbyId("firstInputBox").value; 
+				
+				document.getElementbyId("firstInputBox").innerHTML= "Your song is" +  songName1; 
+				songName1= "Call it what you want- Taylor Swift";  
 			}
 			
 			
