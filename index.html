@@ -113,7 +113,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 		var songName= prompt("Please enter a number from 1-5")
 		
-		function getsong()
+		function getSong()
 		{
 			if (r== 1) 
 			{
@@ -239,8 +239,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	  
 		</form>
 		
-		<a class="w3-btn w3-black" onclick="getSong();">Click me!
-		<a href="#content" onclick="resetVariables();" class="w3-btn w3-black">Return to Home Page</a>
+		<a href="songpage" onclick="getSong();" class="w3-btn w3-grey">Your song is:</a>
+		
 		
 	</center>
 	  </div> 
@@ -304,6 +304,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 			<p id="songResult">Your song is:</p>
 			
 			</div> 
+			
+		<a href="#content" onclick="resetVariables();" class="w3-btn w3-black">Return to Home Page</a>
 			
   
   
