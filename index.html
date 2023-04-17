@@ -215,33 +215,29 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 			<p>May I choose a song for you?</p>
 		</div>
 		
-	
-	  
-	<html>
-<head>
-<script>
-	<!--Function for second page-->
-function check(browser) {
-document.getElementById("answer").value=song;
-}
-</script>
-</head>
+<html>
 <body>
 
-<!--Form element, allows user input in HTML-->	
-<form>
-<input type="radio" name="song" onclick="check(this.value)" value="Internet Explorer">Internet Explorer<br>
-<input type="radio" name="song" onclick="check(this.value)" value="Firefox">1<br>
-<input type="radio" name="song" onclick="check(this.value)" value="Opera">1<br>
-<input type="radio" name="song" onclick="check(this.value)" value="Google Chrome">1<br>
-<input type="radio" name="song" onclick="check(this.value)" value="Safari">1<br>
-<br>
-Your song is: <input type="text" id="answer" size="20">
+<form action="/action_page.php">
+  <input type="radio" name="browser" onclick="myFunction(this.value)" value="help">Internet Explorer<br>
+  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Firefox">Firefox<br>
+  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Opera">Opera<br>
+  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Google Chrome">Google Chrome<br>
+  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Safari">Safari<br><br>
+
+  Your favorite browser is: <input type="text" id="result">
+  <input type="submit" value="Submit form">
 </form>
 
+<script>
+function myFunction(browser) {
+  document.getElementById("result").value = browser;
+}
+</script>
+
 </body>
-</html>
-  
+</html>	
+	  
 		</div>
 	  
 	
