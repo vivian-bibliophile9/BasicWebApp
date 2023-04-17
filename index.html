@@ -219,19 +219,18 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <body>
 
 <form action="/action_page.php">
-  <input type="radio" name="browser" onclick="myFunction(this.value)" value="help">Internet Explorer<br>
-  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Firefox">Firefox<br>
-  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Opera">Opera<br>
-  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Google Chrome">Google Chrome<br>
-  <input type="radio" name="browser" onclick="myFunction(this.value)" value="Safari">Safari<br><br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="Call it what you want-Taylor Swift">Song One<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="Bell's Palsy-Suggi">Song Two<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="Visions-eaj">Song Three<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="Indigo-NIKI">Song Four<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="help">Song Five<br><br>
 
   Your favorite browser is: <input type="text" id="result">
-  <input type="submit" value="Submit form">
 </form>
 
 <script>
-function myFunction(browser) {
-  document.getElementById("result").value = browser;
+function myFunction(song) {
+  document.getElementById("result").value = song;
 }
 </script>
 
