@@ -112,10 +112,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 	}
 	
-	function check(song) 
-	{
-		document.getElementById("songContent").value=song; 				
-	}
+	
 	
 	
 	
@@ -219,22 +216,35 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		</div>
 		
 	<!--Form element, allows user input in HTML-->	
-	<form>
-	<div id="songContent" class="w-3 container"> 
-	<input type="radio" name="song" onclick="check(song)" value="Song One:"> Song One: <br>
-	<br>
-	<input type="radio" name="song" onclick="check(song)" value="Love Scenario-iKON"> 2 <br> 
-	<br>
-	Your song is: <input type="text" id="songContent" size="20">
-	</form>
-	
-		
+	  
+	<html>
+<head>
+<script>
+function check(browser) {
+  document.getElementById("answer").value=browser;
+}
+</script>
+</head>
+<body>
 
-	</center>
-	  </div> 
+<p>What's your favorite browser?</p>
+
+<form>
+<input type="radio" name="browser" onclick="check(this.value)" value="Internet Explorer">Internet Explorer<br>
+<input type="radio" name="browser" onclick="check(this.value)" value="Firefox">Firefox<br>
+<input type="radio" name="browser" onclick="check(this.value)" value="Opera">Opera<br>
+<input type="radio" name="browser" onclick="check(this.value)" value="Google Chrome">Google Chrome<br>
+<input type="radio" name="browser" onclick="check(this.value)" value="Safari">Safari<br>
+<br>
+Your favorite browser is: <input type="text" id="answer" size="20">
+</form>
+
+</body>
+</html>
+  
+		</div>
 	  
-	  
-	  
+	
 	  
 	  
 <!--LAST SUBPAGE-->
