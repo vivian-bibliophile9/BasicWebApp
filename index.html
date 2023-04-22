@@ -320,15 +320,18 @@ function myFunction(song) {
 <html>
 <body>
 
+<form>
 <input type="radio" name="song" value="bell's palsy- suggi" id="mySong">Song One
 
+	Your song is: <input type:"type" id="demo">
+	</form> 
 
-<button onclick="myFunction()">Try it</button>
+<button onclick="song()">Try it</button>
 
 <p id="demo"></p>
 
 <script>
-function myFunction() {
+function song() {
   var x = document.getElementById("mySong").value;
   document.getElementById("demo").innerHTML = x;
 }
