@@ -323,12 +323,12 @@ function myFunction(song) {
 <input type="radio" name="song" value="bell's palsy- suggi" id="mySong">Song One
 
 
-<button onclick="myFunction(song)()">Try it</button>
+<button onclick="myFunction()">Try it</button>
 
 <p id="demo"></p>
 
 <script>
-function myFunction(song)() {
+function myFunction() {
   var x = document.getElementById("mySong").value;
   document.getElementById("demo").innerHTML = x;
 }
