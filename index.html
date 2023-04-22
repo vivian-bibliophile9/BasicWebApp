@@ -323,18 +323,26 @@ function myFunction(song) {
 <!--Form element. Allows user input in HTML--> 
 <form>
   <input type="radio" name="song" onclick="myFunction(this.value)" value="bell's palsy- Suggi">Song One<br>
-  <input type="radio" name="song" onclick="myFunction(this.value)" value="">Song Two<br>
-  <input type="radio" name="song" onclick="myFunction(this.value)" value="">Song Three<br>
-  <input type="radio" name="song" onclick="myFunction(this.value)" value="">Song Four<br>
-  <input type="radio" name="song" onclick="myFunction(this.value)" value="">Song Five<br><br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="l">Song Two<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="l">Song Three<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="l">Song Four<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="l">Song Five<br><br>
 
- <input type="submit" value="Submit Form">
-	Your song is: <input type="type" id="result" style="width: 300px">
-</form>
+<button onclick="myFunction(song)">Submit </button>
+	
+Your song is: <input type="type" id="result" style="width: 300px">
+
+	</form>
+
+
+<p id="demo"></p>
 
 <script>
+
+}
 function myFunction(song) {
-  document.getElementById("result").value = song;
+  var x = document.getElementById("result").value;
+  document.getElementById("demo").innerHTML = x;
 }
 </script>
 
@@ -343,8 +351,7 @@ function myFunction(song) {
 	  
 		</div>
   </center>
-</div>		  
-  				
+</div>			
 				
 				
   
