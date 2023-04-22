@@ -265,7 +265,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<a href=#four onclick="myfunction(song)" class="w3-btn w3-flat-sage" style="width: 67px"> Sad </a>
 			<center>
 				<br>	
-		<a href=#five onclick="myfunction(song)" class="w3-btn w3-flat-sage"> Chill </a>
+		<a href=#five onclick="myfunction(song)" class="w3-btn w3-flat-sage" style="width: 67px"> Chill </a>
 		<center>
 				<br>
 			
@@ -310,6 +310,43 @@ function myFunction(song) {
   </center>
 </div>		  
   
+<!--Fourth Subpage for music option sad-->
+<div id="four" class="page">
+	<div id="header 4" class="w3-container w3-flat-sage">
+		<h1> Sad </p>
+		
+	</div>
+			
+<html>
+<body>
+
+<!--Form element. Allows user input in HTML--> 
+<form>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="bell's palsy- Suggi">Song One<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="">Song Two<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="">Song Three<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="">Song Four<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="">Song Five<br><br>
+
+ <input type="submit" value="Submit Form">
+	Your song is: <input type="submit" id="result" style="width: 300px">
+</form>
+
+<script>
+function myFunction(song) {
+  document.getElementById("result").value = song;
+}
+</script>
+
+</body>
+</html>	
+	  
+		</div>
+  </center>
+</div>		  
+  				
+				
+				
   
 <!--Footer!-->
 <footer class="w3-bottom w3-container w3-flat-sage">
