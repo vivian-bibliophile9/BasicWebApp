@@ -162,6 +162,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	  <a href="#one" class="w3-btn w3-grey w3-round">Get Started!</a>
 	  <!--Button for page 2--> 
 	  <a href="#two" class="w3-btn w3-flat-sage w3-round">May I choose a song for you?</a>
+	  <a href="#four" class="w3-btn w3-flat-sage w3-round">May I choose a book for you?</a>
 	
 	  <p>The following code has been developed by students and/or researchers of the Freshman Research Initiative Maker Space Stream at The University of Texas at Austin. This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code. THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION!</p>
   
@@ -265,7 +266,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 				<br>
 
 			
-		<a href=#content class="w3-btn w3-black"> No thank you</a>
+		<a href=#content class="w3-btn w3-black"> No, thank you</a>
 		
 		<center> 
 		<br>
@@ -275,7 +276,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!--Third Subpage-->
 <div id="three" class="page">
 	<div id="header 3" class="w3-container w3-flat-sage">
-		<h1> Pick a Heart </p>
+		<h1> May I choose a song for you? </p>
 		
 	</div>
 			
@@ -284,7 +285,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<br>
 	<center>
 
-Pick a heart that makes you feel bonita
+(Pick a heart that makes you feel bonita)
 <!--Form element. Allows user input in HTML--> 
 <form>
 <input type="radio" name="song" onclick="myFunction(this.value)" value="Call it what you want-Taylor Swift"> ♡<br>
@@ -305,7 +306,7 @@ Pick a heart that makes you feel bonita
 
 
 	<!--Shows result in text box-->
-  Your song is: <input type="text" id="result">
+  Your song is: <input type="text" id="result" style="width: 308px">
 </form>
 <!--JavaScript code-->
 <script>
@@ -319,20 +320,60 @@ function myFunction(song) {
 	  
 	
   </center>
-</div>		  
+</div>	
+				
+<!--Fourth page-->
+<div id="four" class="page"> 
+<div id="header4" class="w3-container w3-flat-sage">
+	<h1> May I choose a book for you? </p>
+		
+	</div>
+	
+	<center>
+		
+		<br>
+			<br>
+	<!--Main content of the page-->
+		<div id="content3" class="w-3 container">
+		
+		<center>
+		<!--User input--> 
+		<a href=#five onclick="myfunction(song)" class="w3-btn w3-flat-sage"> Yes </a>
+			<center>
+				<br>
+
+			
+		<a href=#content class="w3-btn w3-black"> No, thank you</a>
+		
+		<center> 
+		<br>
+		</div>			
   
-<!--Fourth Subpage-->
-<div id="four" class="page">
-	<div id="header 4" class="w3-container w3-flat-sage">
-		<h1> Sad Songs </p>
+<!--Five Subpage-->
+<div id="five" class="page">
+	<div id="header 5" class="w3-container w3-flat-sage">
+		<h1>  </p>
 		
 	</div>
 
 <body>
 <html>
+	<center>
 	<form>
+<input type="radio" name="book" onclick="myFunction(this.value)" value="Call it what you want-Taylor Swift"> ♡<br>
+<input type="radio" name="book" onclick="myFunction(this.value)" value="I GUESS I'M IN LOVE- Clinton Kane"> ♡<br>
+<input type="radio" name="book" onclick="myFunction(this.value)" value="Silence- Before You Exit"> ♡<br>
+<input type="radio" name="book" onclick="myFunction(this.value)" value="Glimpse of Us- Joji"> ♡<br>
+<input type="radio" name="book" onclick="myFunction(this.value)" value="Butterflies- ASTN"> ♡<br>
 		
+		Your book is: <input type="text" id="answer"> 
 		
+		</form>
+<script>
+function myFunction(book) {
+  document.getElementById("answer").value= book;
+}
+</script>		
 
 
 </body>
