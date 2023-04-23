@@ -288,11 +288,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <!--Form element. Allows user input in HTML--> 
 <form>
-  <input type="radio" name="song" onclick="myFunction(this.value)" value="Call it what you want-Taylor Swift">Song One<br>
-  <input type="radio" name="song" onclick="myFunction(this.value)" value="Bell's Palsy-Suggi">Song Two<br>
-  <input type="radio" name="song" onclick="myFunction(this.value)" value="Visions-eaj">Song Three<br>
-  <input type="radio" name="song" onclick="myFunction(this.value)" value="Indigo-NIKI">Song Four<br>
-  <input type="radio" name="song" onclick="myFunction(this.value)" value="help">Song Five<br><br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="Call it what you want-Taylor Swift">♥<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="I GUESS I'M IN LOVE- Clinton Kane">♥♥<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="Silence- Before You Exit">♥♥♥<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="Butterflies- ASTN">♥♥♥♥<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="Nothing- Bruno Major">♥♥♥♥♥<br><br>
 
   Your song is: <input type="text" id="result">
 </form>
@@ -316,7 +316,22 @@ function myFunction(song) {
 		<h1> Sad </p>
 		
 	</div>
-			
+<!--Form element. Allows user input in HTML--> 
+<form>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="SLOW DANCING IN THE DARK- Joji">♡<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="bell's palsy- Suggi">♡♡<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="this is me trying- Taylor Swift">♡♡♡<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="Pacman- eaj">♡♡♡♡<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="not too late- Lily Pichu">♡♡♡♡♡<br><br>
+
+  Your song is: <input type="text" id="result">
+</form>
+
+<script>
+function myFunction(song) {
+  document.getElementById("result").value = song;
+}
+</script>			
 
 
 
