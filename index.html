@@ -163,88 +163,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	  <a href="#one" class="w3-btn w3-grey w3-round">Get Started!</a>
 	  <!--Button for page 2--> 
 	  <a href="#two" class="w3-btn w3-flat-sage w3-round">May I choose a song for you?</a>
+	  <!--Button for page 4-->
 	  <a href="#four" class="w3-btn w3-flat-sage w3-round">May I choose a book for you?</a>
 	
 	  <p>The following code has been developed by students and/or researchers of the Freshman Research Initiative Maker Space Stream at The University of Texas at Austin. This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code. THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION!</p>
   
   
-  
-<!--FIRST SUBPAGE-->
-<div id="one" class="page">
-	<div id="header2" class="w3-container w3-flat-sage">
-		<h1>Question 1</h1>
-	</div>
-	
-  <center>
-    
-    	<div id="content2" class="w3-container">
-        	<p>QUESTION 1 GOES HERE</p>    
-    	</div>
-	
-	<!--Form element. This allows for user input in HTML.-->
-	<form>
-		<!--Label for first input field.-->
-		<label for="firstInputBox">Enter a number:</label><br>
-		<!--User input box.-->
-		<input type="number" id="firstInputBox" value="0"><br>
-		<!--Label for second input field.-->
-		<label for="secondInputBox">Enter another number:</label><br>
-		<!--User input box.-->
-		<input type="number" id="secondInputBox" value="0">
-		
-		<br><br><br>
-	</form>
-      
-  <a href="#finalpage" onclick="exampleFunction1();" class="w3-btn w3-grey">Button 1</a>
-  <a href="#finalpage" onclick="exampleFunction2();" class="w3-btn w3-grey">Button 2</a>
-  <a href="#finalpage" onclick="exampleFunction3();" class="w3-btn w3-grey">Button 3</a>
-  <a href="#specialpage" onclick="insertImages();" class="w3-btn w3-grey">Special Button</a> 
-    
-  </center>
-</div>  
-  
-  
-  
-
-	  
-<!--Special Page--> 
-	  <div id="specialpage" class="page">
-		  <!--header-->
-		  <div id="specialheader" class="w3-container w3-flat-sage">
-			  <h1>Special Page!</h1>
-		  </div>
-		  
-		  <center>
-		  <!--Main content-->
-		  <div id="specialContent" class="w3-container"> 
-			  <p id="contentResult">Man!</p>
-		  </div>
-		  <!--A link that takes the user to a new page-->
-		  
-		  <a href="#content" onclick="resetVariables();" class="w3-btn w3-grey">Return to Home Page</a>
-			 
-			  <center>
-	  </div>	
-	  
-	  
-<!--LAST SUBPAGE-->
-<div id="finalpage" class="page">
-	<div id="finalheader" class="w3-container w3-flat-sage">
-		<h1>FINAL PAGE TITLE GOES HERE</h1>
-	</div>
-	
-  <center>
-    
-	  <div id="finalcontent" class="w3-container">
-		  <p id="endResults">FINAL PAGE CONTENT GOES HERE</p>
-	  </div>
-  
-  <a class="w3-btn w3-black" onclick="exampleResultsFunction();">Click me!
-    <br>
-    <img id="resultsButtonImg" src="https://i.imgur.com/rZOaHhx.png" width="30" alt="spongebob">
-  </a>
-  <a href="#content" onclick="resetVariables();" class="w3-btn w3-black">Return to Home Page</a>
-    
 	  
 <!--SECOND SUBPAGE-->
 	<div id="two" class="page"> 
@@ -261,12 +185,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<div id="content3" class="w-3 container">
 		
 		<center>
-		<!--User input--> 
+		<!--User input, takes user to third page--> 
 		<a href=#three class="w3-btn w3-flat-sage"> Yes </a>
 			<center>
 				<br>
 
-			
+		<!--takes user back to home page-->
 		<a href=#content class="w3-btn w3-black"> No, thank you</a>
 		
 		<center> 
@@ -274,7 +198,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		</div>
   
 	  
-<!--Third Subpage-->
+<!--Third Subpage where the actual content for the first button is-->
 <div id="three" class="page">
 	<div id="header 3" class="w3-container w3-flat-sage">
 		<h2> May I choose a song for you? </p>
@@ -287,7 +211,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<center>
 
 (Pick a heart that makes you feel bonita)
-<!--Form element. Allows user input in HTML--> 
+<!--Form element. Allows user input in HTML, 15 songs I recommend--> 
 <form>
 <input type="radio" name="song" onclick="myFunction(this.value)" value="Call it what you want-Taylor Swift"> ♡<br>    
 <input type="radio" name="song" onclick="myFunction(this.value)" value="I GUESS I'M IN LOVE- Clinton Kane"> ♡<br>
@@ -321,7 +245,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   </center>
 </div>	
 				
-<!--Fourth page-->
+<!--Fourth subpage for random book recommendation-->
 <div id="four" class="page"> 
 <div id="header4" class="w3-container w3-flat-sage">
 	<h1> Random book recommendation </p>
@@ -337,9 +261,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 		<center>
 		<!--User input--> 
+			
+		<!--takes user to fifth subpage-->
 		<a href=#five class="w3-btn w3-flat-sage"> Click here </a>
 			<center>
 				<br>
+		<!--takes user back to homepage-->
 		<a href=#content class="w3-btn w3-black">  Home </a>
 		
 		<center> 
@@ -348,7 +275,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
  
 
 				
-<!--Five Subpage-->
+<!--Fifth Subpage, for troll book recommendation, honestly just to check if image loads-->
 <div id="five" class="page">
 	<div id="header 5" class="w3-container w3-flat-sage">
 		<h1>  </p>
@@ -360,8 +287,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<center>
 		<br>
 			<br>
+<!--Main content of fifth subpage-->
 <div id="content5" class="w3-container">
 
+<!--code for image-->
 <img src="https://i0.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?w=845&ssl=1"
  alt="404 Error"
  width="550"
@@ -370,13 +299,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<br>
 
 		I'm just kidding T-T 
-		
+	<!--takes user to another page-->
 		<a href=#six class="w3-btn w3-grey"> Click Here! </a>
 	
   </center>
 </div>		  
   
-	<!--Sixth page, for actual book recommendation picture-->
+	<!--Sixth subpage, for actual book recommendation picture-->
 <div id="six" class="page">
 	<div id="header 6" class="w3-container w3-flat-sage">
 		<h1> When Breath Becomes Air- Paul Kalanithi </p>
@@ -385,7 +314,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<center>
 			
 <div id="content6" class="w-3 container">
-		
+
+<!--code for image-->
 <img src="https://m.media-amazon.com/images/I/71dxZ1Z10xL._AC_UF1000,1000_QL80_.jpg"
  alt="When Breath Becomes Air"
  width="310.5"
