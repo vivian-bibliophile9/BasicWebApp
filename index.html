@@ -316,20 +316,21 @@ function myFunction(song) {
 		<h1> Sad </p>
 		
 	</div>
+	<center>
 <!--Form element. Allows user input in HTML--> 
 <form>
-  <input type="radio" name="song" onclick="myFunction(this.value)" value="SLOW DANCING IN THE DARK- Joji">♡<br>
-  <input type="radio" name="song" onclick="myFunction(this.value)" value="bell's palsy- Suggi">♡♡<br>
-  <input type="radio" name="song" onclick="myFunction(this.value)" value="this is me trying- Taylor Swift">♡♡♡<br>
-  <input type="radio" name="song" onclick="myFunction(this.value)" value="Pacman- eaj">♡♡♡♡<br>
-  <input type="radio" name="song" onclick="myFunction(this.value)" value="not too late- Lily Pichu">♡♡♡♡♡<br><br>
+  <input type="radio" name="sadSong" onclick="myFunction(this.value)" value="SLOW DANCING IN THE DARK- Joji">♡<br>
+  <input type="radio" name="sadSong" onclick="myFunction(this.value)" value="bell's palsy- Suggi">♡♡<br>
+  <input type="radio" name="sadSong" onclick="myFunction(this.value)" value="this is me trying- Taylor Swift">♡♡♡<br>
+  <input type="radio" name="sadSong" onclick="myFunction(this.value)" value="Pacman- eaj">♡♡♡♡<br>
+  <input type="radio" name="sadSong" onclick="myFunction(this.value)" value="not too late- Lily Pichu">♡♡♡♡♡<br><br>
 
-  Your song is: <input type="text" id="result">
+  Your song is: <input type="text" id="sad">
 </form>
 
 <script>
-function myFunction(song) {
-  document.getElementById("result").value = song;
+function myFunction(sadSong) {
+  document.getElementById("sad").value = sadSong;
 }
 </script>			
 
