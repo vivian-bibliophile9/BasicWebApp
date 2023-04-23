@@ -110,9 +110,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 		document.getElementById("contentResult").innerHTML = "You inserted " + exampleVariable1 + "smiley faces and " + exampleVariable2 + "frowny faces!"; 
 
-	function myFunction(song) {
- 	 document.getElementById("result").value= song;
-	}
 	
 	}
 	
@@ -313,7 +310,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   Your song is: <input type="text" id="result" style="width: 308px">
 </form>
 <!--JavaScript code-->
-
+<script>
+	function myFunction(song) {
+ 	 document.getElementById("result").value= song;
+	}
+		</script>
 
 </body>
 </html>	
