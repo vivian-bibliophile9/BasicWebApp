@@ -313,7 +313,43 @@ function myFunction(song) {
   </center>
 </div>		  
   
+<!--Fourth Subpage-->
+<div id="four" class="page">
+	<div id="header 4" class="w3-container w3-flat-sage">
+		<h1> Sad Songs </p>
+		
+	</div>
+			
+<html>
+<body>
+	<br>
+	<center>
 
+<!--Form element. Allows user input in HTML--> 
+<form>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="bell's palsy- suggi">♥<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="Pacman- eaj">♥♥<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="Glimpse of Us- Joji">♥♥♥<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="this is me trying- Taylor Swift">♥♥♥♥<br>
+  <input type="radio" name="song" onclick="myFunction(this.value)" value="not too late- Lily Pichu">♥♥♥♥♥<br><br>
+
+	<!--Shows result in text box-->
+  Your song is: <input type="text" id="result">
+</form>
+<!--JavaScript code-->
+<script>
+function myFunction(song) {
+  document.getElementById("result").value= song;
+}
+</script>
+
+</body>
+</html>	
+	  
+	
+  </center>
+</div>		  
+  
   
 <!--Footer!-->
 <footer class="w3-bottom w3-container w3-flat-sage">
