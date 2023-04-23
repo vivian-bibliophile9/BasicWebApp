@@ -279,12 +279,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!--Third Subpage-->
 <div id="three" class="page">
 	<div id="header 3" class="w3-container w3-flat-sage">
-		<h1> Love </p>
+		<h1> Love Songs </p>
 		
 	</div>
 			
 <html>
 <body>
+	<br>
+	<center>
 
 <!--Form element. Allows user input in HTML--> 
 <form>
@@ -294,9 +296,10 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   <input type="radio" name="song" onclick="myFunction(this.value)" value="Butterflies- ASTN">♥♥♥♥<br>
   <input type="radio" name="song" onclick="myFunction(this.value)" value="Nothing- Bruno Major">♥♥♥♥♥<br><br>
 
+	<!--Shows result in text box-->
   Your song is: <input type="text" id="result">
 </form>
-
+<!--JavaScript code-->
 <script>
 function myFunction(song) {
   document.getElementById("result").value = song;
@@ -313,9 +316,10 @@ function myFunction(song) {
 <!--Fourth Subpage for music option sad-->
 <div id="four" class="page">
 	<div id="header 4" class="w3-container w3-flat-sage">
-		<h1> Sad </p>
+		<h1> Sad Songs</p>
 		
 	</div>
+	<br>
 	<center>
 <!--Form element. Allows user input in HTML--> 
 <form>
@@ -325,9 +329,11 @@ function myFunction(song) {
   <input type="radio" name="sadSong" onclick="myFunction(this.value)" value="Pacman- eaj">♡♡♡♡<br>
   <input type="radio" name="sadSong" onclick="myFunction(this.value)" value="not too late- Lily Pichu">♡♡♡♡♡<br><br>
 
+	<!--Shows result in text box-->
   Your song is: <input type="text" id="sad">
 </form>
 
+<!--JavaScript code -->
 <script>
 function myFunction(sadSong) {
   document.getElementById("sad").value = sadSong;
@@ -344,7 +350,42 @@ function myFunction(sadSong) {
   </center>
 </div>			
 				
-				
+  
+<!--Fifth Subpage for music option chill-->
+<div id="five" class="page">
+	<div id="header 5" class="w3-container w3-flat-sage">
+		<h1> Chill Songs</p>
+		
+	</div>
+	<br>
+	<center>
+<!--Form element. Allows user input in HTML--> 
+<form>
+  <input type="radio" name="chillSong" onclick="myFunction(this.value)" value="SLOW DANCING IN THE DARK- Joji">♥<br>
+  <input type="radio" name="chillSong" onclick="myFunction(this.value)" value="bell's palsy- Suggi">♥♥<br>
+  <input type="radio" name="chillSong" onclick="myFunction(this.value)" value="this is me trying- Taylor Swift">♥♥♥<br>
+  <input type="radio" name="chillSong" onclick="myFunction(this.value)" value="Pacman- eaj">♥♥♥♥<br>
+  <input type="radio" name="chillSong" onclick="myFunction(this.value)" value="not too late- Lily Pichu">♥♥♥♥♥<br><br>
+
+<!--Shows result in text box-->
+  Your song is: <input type="text" id="chill">
+</form>
+<!--JavaScript code -->
+<script>
+function myFunction(chillSong) {
+  document.getElementById("chill").value = chillSong;
+}
+</script>			
+
+
+
+</body>
+</html>
+
+	  
+		</div>
+  </center>
+</div>					
   
 <!--Footer!-->
 <footer class="w3-bottom w3-container w3-flat-sage">
