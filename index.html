@@ -9,14 +9,14 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
 Authors in chronological order of contribution:
   Tim Riedel
   Niam Kuttanna
-  [...]
+  Vivian Nguyen
 
 Further Information:
   http://cns.utexas.edu/fri
 
-Brief summary of this code: [...]
+Brief summary of this code: 
 
-Known issues: [...]
+Known issues: Radio buttons associated with a song choice might not display the song in the text box. The formatting of some buttons might look weird on certain devices, however rest assure it will still work as intended. 
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
@@ -59,6 +59,89 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 </style>
 
+	<!--Javascript code for the first page-->
+<script>
+	var exampleVariable1 = 0;
+	var exampleVariable2 = 0;
+	var exampleVariable3 = 0;
+	
+	function exampleFunction1()
+	{
+		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
+    		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
+    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
+		
+		exampleVariable3 = exampleVariable1 + exampleVariable2;
+		
+		alert("You just ran an addition function!");
+		console.log("Addition function was run.");
+	}
+	
+	function exampleFunction2()
+	{
+		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
+    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
+		
+		exampleVariable3 = exampleVariable1 * exampleVariable2;
+		
+		alert("You just ran a multiplication function!");
+		console.log("Multiplication function was run.");
+	}
+	
+	function exampleFunction3()
+	{
+		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
+    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
+		
+		exampleVariable3 = exampleVariable1 ** exampleVariable2;
+		
+		alert("You just ran an exponent function!");
+		console.log("Exponent function was run.");
+	}
+	
+	function exampleResultsFunction()
+	{
+		document.getElementById("endResults").innerHTML = "Your final result is: " + exampleVariable3;
+		resetVariables();
+	}
+	
+	function resetVariables()
+	{
+		exampleVariable1 = 0;
+		exampleVariable2 = 0;
+		exampleVariable3 = 0;
+	}
+	function insertImages()
+	{
+		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
+    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
+		
+		for(let index  = 0; index < exampleVariable1; index++)
+			{	
+				var smileyImage = document.createElement("img");
+				smileyImage.src = "https://i.imgur.com/jctdkSS.png"; 
+				document.getElementById("specialContent").appendChild(smileyImage);
+
+			}
+		
+		for(let index2 = 0; index2 < exampleVariable2; index2++)
+			
+			{
+		
+				var frownyImage= document.createElement("img");
+				frownyImage.src = "https://i.imgur.com/dVUqrSt.png";
+				document.getElementById("specialContent").appendChild(frownyImage);
+			}
+		
+		
+		document.getElementById("contentResult").innerHTML = "You inserted " + exampleVariable1 + "smiley faces and " + exampleVariable2 + "frowny faces!"; 
+
+	
+	}
+	
+	
+	</script>
+	
 
 
 <!--Main HTML body section.-->
@@ -72,13 +155,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<!--description of app-->
 	  <br>
 		<br>
-	  <p style="text-align:center;"> 𝐻𝒾! 𝒲𝑒𝓁𝒸𝑜𝓂𝑒 𝓉𝑜 𝓂𝓎 𝒶𝓅𝓅. 𝐼𝓉'𝓈 𝓋𝑒𝓇𝓎 𝓈𝒾𝓂𝓅𝓁𝑒 𝓉𝑜 𝓊𝓈𝑒, 𝓉𝒽𝑒𝓇𝑒 𝒶𝓇𝑒 𝑜𝓃𝓁𝓎 𝓉𝓌𝑜 𝒷𝓊𝓉𝓉𝑜𝓃𝓈 𝓌𝒽𝒾𝒸𝒽 𝒾𝓈 <br>
-	      𝑒𝒾𝓉𝒽𝑒𝓇 𝒶 𝓈𝑜𝓃𝑔 𝓇𝑒𝒸𝑜𝓂𝓂𝑒𝓃𝒹𝒶𝓉𝒾𝑜𝓃 𝑜𝓇 (𝑜𝓃𝑒) 𝒷𝑜𝑜𝓀 𝓇𝑒𝒸𝑜𝓂𝓂𝑒𝓃𝒹𝒶𝓉𝒾𝑜𝓃. 𝒥𝓊𝓈𝓉 𝒸𝓁𝒾𝒸𝓀 𝒶𝓃𝓎 𝑜𝒻 𝓉𝒽𝑒𝓂 <br>
-	      𝓉𝑜 𝑔𝑒𝓉 𝓈𝓉𝒶𝓇𝓉𝑒𝒹 𝒶𝓃𝒹 𝐼 𝒽𝑜𝓅𝑒 𝓎𝑜𝓊 𝒽𝒶𝓋𝑒 𝒶 𝑔𝓇𝑒𝒶𝓉 𝒹𝒶𝓎!</p>
+	  <p style="text-align:center;"> 𝐻𝒾! 𝒲𝑒𝓁𝒸𝑜𝓂𝑒 𝓉𝑜 𝓂𝓎 𝒶𝓅𝓅. 𝐼𝓉'𝓈 𝓋𝑒𝓇𝓎 𝓈𝒾𝓂𝓅𝓁𝑒 𝓉𝑜 𝓊𝓈𝑒, 𝓉𝒽𝑒𝓇𝑒 𝒶𝓇𝑒 𝑜𝓃𝓁𝓎 𝓉𝒽𝓇𝑒𝑒 𝒷𝓊𝓉𝓉𝑜𝓃𝓈 𝓌𝒽𝒾𝒸𝒽 
+             𝒹𝑜𝑒𝓈 𝒶 𝒻𝑒𝓌 𝓂𝒶𝓉𝒽 𝒸𝒶𝓁𝒸𝓊𝓁𝒶𝓉𝒾𝑜𝓃𝓈, 𝓅𝓇𝑜𝓋𝒾𝒹𝑒𝓈 𝒶 𝓈𝑜𝓃𝑔 𝓇𝑒𝒸𝑜𝓂𝓂𝑒𝓃𝒹𝒶𝓉𝒾𝑜𝓃 𝑜𝓇 (𝑜𝓃𝑒) 𝒷𝑜𝑜𝓀 𝓇𝑒𝒸𝑜𝓂𝓂𝑒𝓃𝒹𝒶𝓉𝒾𝑜𝓃.<br>
+	     𝒥𝓊𝓈𝓉 𝒸𝓁𝒾𝒸𝓀 𝒶𝓃𝓎 𝑜𝒻 𝓉𝒽𝑒𝓂 𝓉𝑜 𝑔𝑒𝓉 𝓈𝓉𝒶𝓇𝓉𝑒𝒹 𝒶𝓃𝒹 𝐼 𝒽𝑜𝓅𝑒 𝓎𝑜𝓊 𝒽𝒶𝓋𝑒 𝒶 𝒸𝑜𝓂𝒻𝓎 𝒹𝒶𝓎!</p><br>
+	     
 	<center>
 		<br>
 		
 	  <center>
+	  <a href="#one" onclick="resetVariables()" class="w3-btn w3-flat-rose w3-round"> 𝐍𝐨𝐭 𝐚 𝐬𝐮𝐬𝐩𝐢𝐜𝐢𝐨𝐮𝐬 𝐛𝐮𝐭𝐭𝐨𝐧 </a>
 	  <!--Button for page 2--> 
 	  <a href="#two" class="w3-btn w3-flat-rose w3-round">𝐌𝐚𝐲 𝐈 𝐜𝐡𝐨𝐨𝐬𝐞 𝐚 𝐬𝐨𝐧𝐠 𝐟𝐨𝐫 𝐲𝐨𝐮?</a>
 		  
@@ -91,7 +176,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	  <img src="https://i.pinimg.com/564x/98/b6/0e/98b60ec5dda78a9a9764deb67923b8bd.jpg"
  	  alt="Comfy green aesthetic"
           title="Green Aesthetic"
-	   style="width: 200px" "height:  210.292px">
+	  style="width: 200px" "height:  210.292px">
 
 
 		</center> 
@@ -102,7 +187,83 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </div>	 
 
 		</div>
-	 
+<!--FIRST SUBPAGE-->
+<div id="one" class="page">
+	<div id="header2" class="w3-container w3-flat-sage">
+		<h1> 𝓟𝓾𝓽 𝓪𝓷𝔂 𝓷𝓾𝓶𝓫𝓮𝓻 𝓲𝓷 𝓽𝓱𝓮 𝓫𝓸𝔁𝓮𝓼 𝓪𝓷𝓭 𝓬𝓵𝓲𝓬𝓴 𝓪𝓷𝔂 𝓫𝓾𝓽𝓽𝓸𝓷 </h1>
+	</div>
+	
+  <center>
+    
+    	<div id="content2" class="w3-container">
+        	<p> 𝓝𝓸𝓽 𝓪 𝓼𝓾𝓼𝓹𝓲𝓬𝓲𝓸𝓾𝓼 𝓹𝓪𝓰𝓮 </p>    
+    	</div>
+	
+	<!--Form element. This allows for user input in HTML.-->
+	<form>
+		<!--Label for first input field.-->
+		<label for="firstInputBox">Enter a number:</label><br>
+		<!--User input box.-->
+		<input type="number" id="firstInputBox" value="0"><br>
+		<!--Label for second input field.-->
+		<label for="secondInputBox">Enter another number:</label><br>
+		<!--User input box.-->
+		<input type="number" id="secondInputBox" value="0">
+		
+		<br><br><br>
+	</form>
+      
+  <a href="#finalpage" onclick="exampleFunction1();" class="w3-btn w3-rose">Button 1</a>
+  <a href="#finalpage" onclick="exampleFunction2();" class="w3-btn w3-rose">Button 2</a>
+  <a href="#finalpage" onclick="exampleFunction3();" class="w3-btn w3-rose">Button 3</a>
+  <a href="#specialpage" onclick="insertImages();" class="w3-btn w3-rose">Special Button</a> 
+    
+  </center>
+</div>  
+  
+  
+  
+
+	  
+<!--Special Page--> 
+	  <div id="specialpage" class="page">
+		  <!--header-->
+		  <div id="specialheader" class="w3-container w3-flat-sage">
+			  <h1>Special Page!</h1>
+		  </div>
+		  
+		  <center>
+		  <!--Main content-->
+		  <div id="specialContent" class="w3-container"> 
+			  <p id="contentResult">Man!</p>
+		  </div>
+		  <!--A link that takes the user to a new page-->
+		  
+		  <a href="#content" onclick="resetVariables();" class="w3-btn w3-grey">Return to Home Page</a>
+			 
+			  <center>
+	  </div>	
+	  
+	  
+<!--LAST SUBPAGE-->
+<div id="finalpage" class="page">
+	<div id="finalheader" class="w3-container w3-flat-sage">
+		<h1></h1>
+	</div>
+	
+  <center>
+    
+	  <div id="finalcontent" class="w3-container">
+		  <p id="endResults">E</p>
+	  </div>
+  
+  <a class="w3-btn w3-black" onclick="exampleResultsFunction();">Click me!
+    <br>
+    <img id="resultsButtonImg" src="https://i.pinimg.com/564x/63/67/8b/63678b15ac288923edaae5fb6ed38ec0.jpg" width="30" alt="pikachu">
+  </a>
+  <a href="#content" onclick="resetVariables();" class="w3-btn w3-graypink">Return to Home Page</a>
+    
+	  </div>	 
 	  
 <!--SECOND SUBPAGE-->
 <div id="two" class="page"> 
