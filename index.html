@@ -14,9 +14,10 @@ Authors in chronological order of contribution:
 Further Information:
   http://cns.utexas.edu/fri
 
-Brief summary of this code: 
+Brief summary of this code: This code is mostly supposed to be for fun. The first set of JavaScript code is for the first page (the calculator page). Then the next sets are for the "May I choose a song for you?" and "May I choose a book for you?" page. 
 
-Known issues: Radio buttons associated with a song choice might not display the song in the text box. The formatting of some buttons might look weird on certain devices, however rest assure it will still work as intended. 
+Known issues: Radio buttons associated with a song choice might not display the song in the text box. The formatting of some buttons might look weird on certain devices, however rest assure it will still work as intended. User should hopefully click the "Click Me!" 
+button or else they will be left with no results. 
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
@@ -118,9 +119,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 		for(let index  = 0; index < exampleVariable1; index++)
 			{	
-				var smileyImage = document.createElement("img");
-				smileyImage.src = "https://i.imgur.com/jctdkSS.png"; 
-				document.getElementById("specialContent").appendChild(smileyImage);
+				var pikaImage = document.createElement("img");
+				pikaImage.src = "https://www.pngkit.com/png/detail/56-566175_pikachu-clipart-kawaii-kawaii-cute-pikachu.png"; 
+				document.getElementById("specialContent").appendChild(pikaImage);
 
 			}
 		
@@ -128,13 +129,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 			
 			{
 		
-				var frownyImage= document.createElement("img");
-				frownyImage.src = "https://i.imgur.com/dVUqrSt.png";
-				document.getElementById("specialContent").appendChild(frownyImage);
+				var derpyImage= document.createElement("img");
+				derpyImage.src = "https://smallimg.pngkey.com/png/small/65-653296_not-mine-pikachu-chibi-fabulous-cute-kute-tiny.png";
+				document.getElementById("specialContent").appendChild(derpyImage);
 			}
 		
 		
-		document.getElementById("contentResult").innerHTML = "You inserted " + exampleVariable1 + "smiley faces and " + exampleVariable2 + "frowny faces!"; 
+		document.getElementById("contentResult").innerHTML = "You inserted  " + exampleVariable1 + " pikachus and " + exampleVariable2 + " derpy pikachus !"; 
 
 	
 	}
@@ -190,13 +191,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!--FIRST SUBPAGE-->
 <div id="one" class="page">
 	<div id="header2" class="w3-container w3-flat-sage">
-		<h3> <center> 𝓟𝓾𝓽 𝓪𝓷𝔂 𝓷𝓾𝓶𝓫𝓮𝓻 𝓲𝓷 𝓽𝓱𝓮 𝓫𝓸𝔁𝓮𝓼 𝓪𝓷𝓭 𝓬𝓵𝓲𝓬𝓴 𝓪𝓷𝔂 𝓫𝓾𝓽𝓽𝓸𝓷 </center> </h3>
+		<h3> <center> 𝓝𝓸𝓽 𝓪 𝓼𝓾𝓼𝓹𝓲𝓬𝓲𝓸𝓾𝓼 𝓹𝓪𝓰𝓮 </center> </h3>
 	</div>
 	
   <center>
     
     	<div id="content2" class="w3-container">
-        	<p> 𝓝𝓸𝓽 𝓪 𝓼𝓾𝓼𝓹𝓲𝓬𝓲𝓸𝓾𝓼 𝓹𝓪𝓰𝓮 </p>    
+        	<p> 𝒫𝓊𝓉 𝒶𝓃𝓎 𝓃𝓊𝓂𝒷𝑒𝓇 𝒾𝓃 𝓉𝒽𝑒 𝒷𝑜𝓍𝑒𝓈 𝒶𝓃𝒹 𝒸𝓁𝒾𝒸𝓀 𝒶𝓃𝓎 𝒷𝓊𝓉𝓉𝑜𝓃 </p>    
     	</div>
 	
 	<!--Form element. This allows for user input in HTML.-->
@@ -212,11 +213,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 		<br><br><br>
 	</form>
-      
-  <a href="#finalpage" onclick="exampleFunction1();" class="w3-btn w3-flat-rose">Button 1</a>
-  <a href="#finalpage" onclick="exampleFunction2();" class="w3-btn w3-flat-rose">Button 2</a>
-  <a href="#finalpage" onclick="exampleFunction3();" class="w3-btn w3-flat-rose">Button 3</a>
-  <a href="#specialpage" onclick="insertImages();" class="w3-btn w3-flat-rose">Special Button</a> 
+   <!--takes user to different page-->  
+  <a href="#finalpage" onclick="exampleFunction1();" class="w3-btn w3-flat-pinkish w3-round">𝐁𝐮𝐭𝐭𝐨𝐧 𝟏</a>
+  <a href="#finalpage" onclick="exampleFunction2();" class="w3-btn w3-flat-pinkish w3-round">𝐁𝐮𝐭𝐭𝐨𝐧 𝟐</a>
+  <a href="#finalpage" onclick="exampleFunction3();" class="w3-btn w3-flat-pinkish w3-round">𝐁𝐮𝐭𝐭𝐨𝐧 𝟑</a>
+  <a href="#specialpage" onclick="insertImages();" class="w3-btn w3-flat-pinkish w3-round">𝐒𝐩𝐞𝐜𝐢𝐚𝐥 𝐁𝐮𝐭𝐭𝐨𝐧</a> 
     
   </center>
 </div>  
@@ -229,7 +230,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	  <div id="specialpage" class="page">
 		  <!--header-->
 		  <div id="specialheader" class="w3-container w3-flat-sage">
-			  <h1>Special Page!</h1>
+			  <h2> <center> 𝓢𝓹𝓮𝓬𝓲𝓪𝓵 𝓹𝓪𝓰𝓮! </center> </h2>
 		  </div>
 		  
 		  <center>
@@ -239,7 +240,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		  </div>
 		  <!--A link that takes the user to a new page-->
 		  
-		  <a href="#content" onclick="resetVariables();" class="w3-btn w3-flat-graypink">Return to Home Page</a>
+		  <a href="#content" onclick="resetVariables();" class="w3-btn w3-flat-pinkish w3-round">𝐑𝐞𝐭𝐮𝐫𝐧 𝐭𝐨 𝐇𝐨𝐦𝐞 𝐏𝐚𝐠𝐞</a>
 			 
 			  <center>
 	  </div>	
@@ -257,11 +258,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		  <p id="endResults">E</p>
 	  </div>
   
-  <a class="w3-btn w3-black" onclick="exampleResultsFunction();">Click me!
+  <a class="w3-btn w3-flat-rose" onclick="exampleResultsFunction();">𝐂𝐥𝐢𝐜𝐤 𝐦𝐞!
     <br>
-    <img id="resultsButtonImg" src="https://i.pinimg.com/564x/1c/51/d0/1c51d03ab904d898243b5b2116d38f13.jpg" width="30" alt="loading cat">
+    <img id="resultsButtonImg" src="https://i.pinimg.com/564x/1c/51/d0/1c51d03ab904d898243b5b2116d38f13.jpg" width="50" alt="loading cat">
   </a>
-  <a href="#content" onclick="resetVariables();" class="w3-btn w3-flat-graypink">Return to Home Page</a>
+  <a href="#content" onclick="resetVariables();" class="w3-btn w3-flat-pinkish">𝐑𝐞𝐭𝐮𝐫𝐧 𝐭𝐨 𝐇𝐨𝐦𝐞 𝐏𝐚𝐠𝐞</a>
     
 	  </div>	 
 	  
