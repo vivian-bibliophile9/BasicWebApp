@@ -62,49 +62,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 	<!--Javascript code for the first page-->
 <script>
-	var exampleVariable1 = 0;
-	var exampleVariable2 = 0;
-	var exampleVariable3 = 0;
-	
-	function exampleFunction1()
-	{
-		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
-    		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
-		
-		exampleVariable3 = exampleVariable1 + exampleVariable2;
-		
-		alert("You just ran an addition function!");
-		console.log("Addition function was run.");
-	}
-	
-	function exampleFunction2()
-	{
-		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
-		
-		exampleVariable3 = exampleVariable1 * exampleVariable2;
-		
-		alert("You just ran a multiplication function!");
-		console.log("Multiplication function was run.");
-	}
-	
-	function exampleFunction3()
-	{
-		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
-		
-		exampleVariable3 = exampleVariable1 ** exampleVariable2;
-		
-		alert("You just ran an exponent function!");
-		console.log("Exponent function was run.");
-	}
-	
-	function exampleResultsFunction()
-	{
-		document.getElementById("endResults").innerHTML = "Your final result is: " + exampleVariable3;
-		resetVariables();
-	}
 	
 	function resetVariables()
 	{
@@ -214,9 +171,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<br><br><br>
 	</form>
    <!--takes user to different page-->  
-  <a href="#finalpage" onclick="exampleFunction1();" class="w3-btn w3-flat-pinkish w3-round">𝐁𝐮𝐭𝐭𝐨𝐧 𝟏</a>
-  <a href="#finalpage" onclick="exampleFunction2();" class="w3-btn w3-flat-pinkish w3-round">𝐁𝐮𝐭𝐭𝐨𝐧 𝟐</a>
-  <a href="#finalpage" onclick="exampleFunction3();" class="w3-btn w3-flat-pinkish w3-round">𝐁𝐮𝐭𝐭𝐨𝐧 𝟑</a>
+ 
   <a href="#specialpage" onclick="insertImages();" class="w3-btn w3-flat-pinkish w3-round">𝐒𝐩𝐞𝐜𝐢𝐚𝐥 𝐁𝐮𝐭𝐭𝐨𝐧</a> 
     
   </center>
